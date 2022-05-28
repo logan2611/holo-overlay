@@ -4,6 +4,8 @@ A small collection of systemd services and scripts to enable installing packages
 
 Holo-Overlay should survive updates, however this has not been tested yet.
 
+It can also be installed alongside some SteamOS modifications that utilize RAUC to persist.
+
 **This is experimental software, it could potentially brick your system or otherwise degrade it's usability. Do not install unless you are prepared to recover from such an occurrence.**
 
 ## Installation:

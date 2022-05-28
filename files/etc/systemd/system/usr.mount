@@ -10,7 +10,7 @@ After=opt.mount
 Where=/usr/
 What=overlay
 Type=overlay
-Options=lowerdir=/usr/,upperdir=/opt/holo-overlay/usr/upper,workdir=/opt/holo-overlay/usr/work
+Options=lowerdir=/usr/,upperdir=/opt/holo-overlay/usr/upper,workdir=/opt/holo-overlay/usr/work,index=off,metacopy=off
 
 [Install]
 WantedBy=local-fs.target

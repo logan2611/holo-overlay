@@ -1,0 +1,15 @@
+# Added by https://github.com/logan2611/holo-overlay
+# License: MIT License
+
+[Unit]
+Description=usr Overlay
+After=etc.mount
+
+[Mount]
+Where=/usr/
+What=overlay
+Type=overlay
+Options=lowerdir=/usr/,upperdir=/opt/holo-overlay/usr/upper,workdir=/opt/holo-overlay/usr/work
+
+[Install]
+WantedBy=local-fs.target

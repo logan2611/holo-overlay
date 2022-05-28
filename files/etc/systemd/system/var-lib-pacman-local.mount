@@ -1,0 +1,15 @@
+# Added by https://github.com/logan2611/holo-overlay
+# License: MIT License
+
+[Unit]
+Description=Overlay for /var/lib/pacman/local
+After=etc.mount
+
+[Mount]
+Where=/var/lib/pacman/local/
+What=overlay
+Type=overlay
+Options=lowerdir=/var/lib/pacman/local/,upperdir=/opt/holo-overlay/var/lib/pacman/local/upper,workdir=/opt/holo-overlay/var/lib/pacman/local/work
+
+[Install]
+WantedBy=local-fs.target

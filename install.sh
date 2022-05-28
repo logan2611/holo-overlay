@@ -14,7 +14,8 @@ install -m 644 \
     /etc/systemd/system/
 
 # 99% of packages either drop their contents in /usr, and/or in already writable directories.
-# If you encounter a package that does not install or work properly, please report it at https://github.com/logan2611/holo-overlay/issues/new?assignees=&labels=broken+package%2C+bug&template=package-does-not-work-install.md&title=
+# If you encounter a package that does not install or work properly, please report it at
+# https://github.com/logan2611/holo-overlay/issues/new?assignees=&labels=broken+package%2C+bug&template=package-does-not-work-install.md&title=
 mkdir -p /opt/holo-overlay/usr/upper
 mkdir /opt/holo-overlay/usr/work
 

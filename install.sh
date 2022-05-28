@@ -9,7 +9,7 @@ set -xe
 
 install -m 644 \
     "$(dirname $0)/files/etc/systemd/system/usr.mount" \
-    "$(dirname $0)/files/etc/systemd/system/var-lib-pacman-local.mount" \
+    "$(dirname $0)/files/etc/systemd/system/var-lib-pacman.mount" \
     "$(dirname $0)/files/etc/systemd/system/pacman-cleanup.service" \
     /etc/systemd/system/
 
@@ -20,13 +20,13 @@ mkdir -p /opt/holo-overlay/usr/upper
 mkdir /opt/holo-overlay/usr/work
 
 # Trying not to contaminate the stock installed packages
-mkdir -p /opt/holo-overlay/var/lib/pacman/local/upper
-mkdir /opt/holo-overlay/var/lib/pacman/local/work
+mkdir -p /opt/holo-overlay/var/lib/pacman/upper
+mkdir /opt/holo-overlay/var/lib/pacman/work
 
 # Only starting it for now, in case something goes wrong
 systemctl daemon-reload
 systemctl start usr.mount
-systemctl start var-lib-pacman-local.mount
+systemctl start var-lib-pacman.mount
 
 pacman-key --init
 pacman-key --populate archlinux --populate holo
@@ -34,7 +34,7 @@ pacman-key --populate archlinux --populate holo
 # Probably safe to start it with everything else now
 systemctl disable pacman-cleanup.service # Unfortunately useless
 systemctl enable usr.mount
-systemctl enable var-lib-pacman-local.mount
+systemctl enable var-lib-pacman.mount
 
 # Fix for missing fonts in desktop mode
 pacman -Sy --needed --noconfirm fontconfig lib32-fontconfig ttf-liberation

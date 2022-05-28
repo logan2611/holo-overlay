@@ -7,10 +7,10 @@ After=etc.mount
 After=opt.mount
 
 [Mount]
-Where=/var/lib/pacman/local/
+Where=/var/lib/pacman/
 What=overlay
 Type=overlay
-Options=lowerdir=/var/lib/pacman/local/,upperdir=/opt/holo-overlay/var/lib/pacman/local/upper,workdir=/opt/holo-overlay/var/lib/pacman/local/work,index=off,metacopy=off
+Options=lowerdir=/var/lib/pacman/,upperdir=/opt/holo-overlay/var/lib/pacman/upper,workdir=/opt/holo-overlay/var/lib/pacman/work,index=off,metacopy=off
 
 [Install]
 WantedBy=local-fs.target

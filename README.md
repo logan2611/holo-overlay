@@ -18,7 +18,7 @@ sudo ./install.sh
 
 ## Uninstallation:
 ```
-sudo systemctl disable usr.mount var-lib-pacman-local.mount
-sudo rm -r /etc/systemd/system/usr.mount /etc/systemd/system/var-lib-pacman-local.mount /etc/systemd/system/pacman-cleanup.service /opt/holo-overlay/
+sudo systemctl disable usr.mount var-lib-pacman.mount
+sudo rm -r /etc/systemd/system/usr.mount /etc/systemd/system/var-lib-pacman.mount /etc/systemd/system/pacman-cleanup.service /opt/holo-overlay/
 sudo reboot
 ```

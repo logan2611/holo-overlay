@@ -4,6 +4,7 @@
 [Unit]
 Description=usr Overlay
 After=etc.mount
+After=opt.mount
 
 [Mount]
 Where=/usr/

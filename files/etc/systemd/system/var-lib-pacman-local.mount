@@ -4,6 +4,7 @@
 [Unit]
 Description=Overlay for /var/lib/pacman/local
 After=etc.mount
+After=opt.mount
 
 [Mount]
 Where=/var/lib/pacman/local/

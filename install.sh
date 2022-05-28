@@ -38,3 +38,4 @@ systemctl enable var-lib-pacman-local.mount
 
 # Fix for missing fonts in desktop mode
 pacman -Sy --needed --noconfirm lib32-fontconfig ttf-liberation
+fc-cache -rv

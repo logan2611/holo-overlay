@@ -2,7 +2,7 @@
 
 A small collection of systemd services and scripts to enable installing packages on SteamOS 3.x
 
-Holo-Overlay persists through updates without the use of RAUC, allowing you to install it alongside other modification that utilize it to persist.
+Holo-Overlay persists through updates without the use of RAUC, allowing you to install it alongside other modifications that utilize it to persist.
 
 **This is experimental software, it could potentially brick your system or otherwise degrade it's usability. Do not install unless you are prepared to recover from such an occurrence.**
 

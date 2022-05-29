@@ -1,5 +1,7 @@
 # Holo-Overlay
 
+### ⚠️ Warning: This repo is not ready for production use. It has several issues which make it impractical to use at this time.
+
 A small collection of systemd services and scripts to enable installing packages on SteamOS 3.x
 
 Holo-Overlay persists through updates without the use of RAUC, allowing you to install it alongside other modifications that utilize it to persist. (See [#2](https://github.com/logan2611/holo-overlay/issues/2))
